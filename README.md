@@ -1,2 +1,4 @@
-# jetson-xavier
-A Curated List of Resources related to Jetson Xavier
+#  Getting Started with Jetson Xavier
+
+
+
