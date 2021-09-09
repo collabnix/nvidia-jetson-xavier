@@ -11,7 +11,7 @@ exposes many standard hardware interfaces, enabling a highly flexible and extens
 3. [Software](#Software)
 4. [Setting up Docker](#setting-up-docker)
 5. [Identify Jetson Board](#identify-jetson-board)
-
+6. [Installing CUDA](#installing-cuda)
 
 ## Intent:
 
@@ -25,7 +25,7 @@ Jetson AGX Xavier module with thermal solution:
 - Type C to Type A adapter (USB 3.1 Gen 1)
 
 
-## Hardware :
+## Hardware:
 
 |Items        |   Link        | Reference  |
 | ------------- |:-------------:| -----:|
@@ -36,7 +36,7 @@ Jetson AGX Xavier module with thermal solution:
 
 
 
-## Installing Docker
+## Settig up Docker
 
 Jetson Xavier SD card image comes with Docker but let's install the latest version of Docker 20.10.8.
 
@@ -99,6 +99,18 @@ NVIDIA Jetson AGX Xavier [16GB]
  Vulcan: 1.1.70
 xavier@xavier-desktop:~/jetsonUtilities$ 
 ```
+
+## Installing CUDA
+
+```
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/sbsa/cuda-ubuntu1804.pin
+sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600
+sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/sbsa/7fa2af80.pub
+sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/sbsa/ /"
+sudo apt-get update
+sudo apt-get -y install cuda
+```
+
 ## Installing Jtop
 
 ```
