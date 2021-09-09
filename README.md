@@ -1,10 +1,21 @@
 #  Jetson Xavier Tutorials
 
 
-## Getting Started with Jetson AGX Xavier
-
 The NVIDIA® Jetson AGX Xavier™ Developer Kit provides a full-featured development platform designed to get you up and running quickly. The included carrier board
-exposes many standard hardware interfaces, enabling a highly flexible and extensible platform for rapid prototyping. NVIDIA JetPack SDK supports both your developer kit and host development platform
+exposes many standard hardware interfaces, enabling a highly flexible and extensible platform for rapid prototyping. NVIDIA JetPack SDK supports both your developer kit and host development platform.
+
+## Table of Contents
+
+1. [Intent](#Intent)
+2. [Hardware](#hardware)
+3. [Software](#Software)
+4. [Setting up Docker](#setting-up-docker)
+5. [Identify Jetson Board](#identify-jetson-board)
+
+
+## Intent:
+
+The intention with this project repository is to help you get started with NVIDIA Jetson AGX Xavier system.
 
 Jetson AGX Xavier module with thermal solution:
 
@@ -14,7 +25,21 @@ Jetson AGX Xavier module with thermal solution:
 - Type C to Type A adapter (USB 3.1 Gen 1)
 
 
+## Hardware :
+
+|Items        |   Link        | Reference  |
+| ------------- |:-------------:| -----:|
+| NVIDIA Jetson AGX Xavier| [Buy]() | 
+
+
+## Software:
+
+
+
 ## Installing Docker
+
+Jetson Xavier SD card image comes with Docker but let's install the latest version of Docker 20.10.8.
+
 
 ```
 xavier@xavier-desktop:~$ sudo docker version
